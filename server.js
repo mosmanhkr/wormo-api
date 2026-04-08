@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3002;
 
-app.use(cors({ origin: 'https://wormogpt.com' }));
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 async function callWormoGPT(messages) {
